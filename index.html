@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Yu-Gi-Oh! Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+    </head>
+    <body>
+        <section class="container">
+            <div class="left-half">
+                <article>
+                    <p>PLAYER 1</p>
+                    <h1 id = "player1" class="firstClass"></h1>
+                    <p id = "zivotni1" class="life"></p>
+                    <button onclick="oduzimanje()" class="myButton1">Promjena</button>
+                    <p></p>
+                    <button onclick="tablica1()" type="button" class="myButton3">Tablica</button>
+                    <p>Coin flip: <span id="result"></span></p>
+                </article>
+            </div>
+            <div class="right-half">
+                <article>
+                    <p>PLAYER 2</p>
+                    <h1 id = "player2" class="secondClass"></h1>
+                    <p id = "zivotni2" class="life"></p>
+                    <button onclick="oduzimanje1()" class="myButton">Promjena</button>
+                    <p></p>
+                    <button onclick="tablica2()" class="myButton2">Tablica</button>
+                    <p>Die roll: <span id="diceN"></span></p>
+                </article>
+            </div>
+        </section>
+        <script src="js.js"></script>
+        <script src="coinflip.js"></script>
+        <script src="dice.js"></script>
+    </body>
+</html>
